@@ -2,6 +2,7 @@
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
+import { useLanguage } from "@/lib/LanguageContext";
 
 const works = [
   { src: "/project1.jpg", alt: "project1" },
@@ -12,6 +13,7 @@ const works = [
 ];
 
 export default function OurWorks() {
+  const { t } = useLanguage();
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 3000 }),
   ]);
@@ -25,11 +27,11 @@ export default function OurWorks() {
   };
 
   return (
-    <div className="overflow-hidden">
-      <div className="flex justify-center text-2xl font-bold pb-10 pt-10">
-        Our Works
+    <div className="py-6">
+      <div className="flex justify-center text-3xl font-extrabold pb-8 pt-10 tracking-tight text-gray-900">
+        {t.ourWorks.sectionTitle}
       </div>
-      <div className="embla relative left-29 lg:left-173 md:left-81">
+      <div className="embla overflow-hidden">
         <div
           className="embla__viewport"
           ref={emblaRef}
@@ -38,13 +40,13 @@ export default function OurWorks() {
         >
           <div className="embla__container">
             {works.map((work, index) => (
-              <div className="embla__slide relative h-100" key={index}>
+              <div className="embla__slide flex items-center justify-center" key={index}>
                 <Image
                   src={work.src}
                   alt={work.alt}
-                  width={200}
-                  height={200}
-                  className="w-auto h-auto "
+                  width={900}
+                  height={500}
+                  className="w-full max-h-[500px] object-contain"
                   priority={index === 0}
                   loading={index === 0 ? "eager" : "lazy"}
                 />

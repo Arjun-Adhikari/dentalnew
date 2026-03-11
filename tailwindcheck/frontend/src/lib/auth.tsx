@@ -9,5 +9,5 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
   },
-  trustedOrigins: ["https://dentalnew-omega.vercel.app/"], //for other url declaring here is useful for cors.
+  trustedOrigins: ["https://dentalnew-omega.vercel.app"], //for other url declaring here is useful for cors.
 });

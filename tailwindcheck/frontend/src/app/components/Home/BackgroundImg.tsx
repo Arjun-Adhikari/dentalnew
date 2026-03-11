@@ -9,7 +9,6 @@ export default function BackgroundImg() {
         width={1920}
         height={1080}
         priority
-        quality={90}
         className="w-full h-auto object-cover"
       />
     </section>

@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef } from "react";
 
 const stats = [
-  { value: 2000, label: "Projects Completed" },
+  { value: 2000, label: "Satisfied Patients" },
   { value: 2, label: "Years Experience" },
   { value: 100, label: "Satisfaction Rate %" },
 ];
@@ -38,7 +38,7 @@ function Counter({ target }: { target: number }) {
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, [target]);
-  return <div ref={ref}>{count}+</div>;
+  return <div ref={ref}>{count}%</div>;
 }
 
 export default function OurSatisfiedCustomers() {

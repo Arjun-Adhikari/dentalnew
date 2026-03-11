@@ -29,7 +29,7 @@ export default function OurWorks() {
       <div className="flex justify-center text-2xl font-bold pb-10 pt-10">
         Our Works
       </div>
-      <div className="embla relative left-22 lg:left-165 md:left-81">
+      <div className="embla relative left-29 lg:left-173 md:left-81">
         <div
           className="embla__viewport"
           ref={emblaRef}
@@ -44,7 +44,7 @@ export default function OurWorks() {
                   alt={work.alt}
                   width={200}
                   height={200}
-                  className="object-cover"
+                  className="w-auto h-auto "
                   priority={index === 0}
                   loading={index === 0 ? "eager" : "lazy"}
                 />

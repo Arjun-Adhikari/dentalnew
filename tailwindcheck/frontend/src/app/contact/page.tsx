@@ -1,7 +1,7 @@
 export default function page() {
   return (
     <div>
-      <div className="bg-[#2b4859] text-white flex justify-center pt-10 pb-8 text-3xl mb-6">
+      <div className="bg-[#2b4859] text-white flex justify-center pt-10 pb-8 mb-6 text-2xl md:text-3xl">
         Contact Us
       </div>
       <div className="flex justify-center flex-col lg:flex-row items-center  gap-6">

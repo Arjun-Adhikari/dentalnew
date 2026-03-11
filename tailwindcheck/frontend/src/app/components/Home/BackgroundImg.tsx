@@ -1,13 +1,13 @@
 import Image from "next/image";
-import backgroundimg from "../../../../public/backgroundimg.jpg";
+
 export default function BackgroundImg() {
   return (
     <section className="">
       <Image
-        src={backgroundimg}
+        src="/backgroundimg.jpg"
         alt="Dental background image"
         width={1920}
-        height={1080}
+        height={800}
         priority
         className="w-full h-auto object-cover"
       />

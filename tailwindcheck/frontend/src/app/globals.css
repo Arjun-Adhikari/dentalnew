@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  font-size: 17px;
+}
+
 .embla__viewport {
   overflow: hidden;
 }

@@ -1,9 +1,13 @@
+"use client";
+import { useLanguage } from "@/lib/LanguageContext";
+
 export default function Our_Location() {
+  const { t } = useLanguage();
   return (
     <div className="flex justify-center p-2 pb-10">
       <div className="flex flex-col gap-10">
         <h1 className="font-bold text-2xl  flex justify-center">
-          Our Location
+          {t.ourLocation.sectionTitle}
         </h1>
         <iframe
           className="lg:w-4xl md:w-2xl"

@@ -9,5 +9,5 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
   },
-  trustedOrigins: ["http://localhost:3001"], //for other url declaring here is useful for cors.
+  trustedOrigins: ["https://dentalnew-5cka31z7c-arjun-adhikaris-projects.vercel.app/"], //for other url declaring here is useful for cors.
 });

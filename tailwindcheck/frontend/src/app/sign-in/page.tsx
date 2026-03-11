@@ -58,21 +58,17 @@
 //   );
 // }
 
-
-
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { signIn } from "@/lib/auth-client";
 import { FaEnvelope, FaLock, FaCircleNotch, FaTooth } from "react-icons/fa";
 
 export default function SignInPage() {
-  const router = useRouter();
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  async function handleSubmit(e: any) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setError(null);
     setIsLoading(true);
@@ -82,13 +78,15 @@ export default function SignInPage() {
     const password = formData.get("password") as string;
 
     try {
-      const res = await signIn.email({ email, password });
+      const res = await signIn.email({
+        email,
+        password,
+        callbackURL: "/dashboard",
+      });
 
       if (res.error) {
         setError(res.error.message || "Invalid credentials. Please try again.");
         setIsLoading(false);
-      } else {
-        router.push("/dashboard");
       }
     } catch (err) {
       setError("Unable to connect. Please try again later.");
@@ -118,7 +116,7 @@ export default function SignInPage() {
           </div>
 
           {error && (
-            <div className="mb-6 px-4 py-3 rounded-xl bg-red-50 border-l-4 border-red-500 text-red-700 text-xs font-semibold animate-shake">
+            <div className="mb-6 px-4 py-3 rounded-xl bg-red-50 border-l-4 border-red-500 text-red-700 text-xs font-semibold">
               {error}
             </div>
           )}
@@ -143,11 +141,9 @@ export default function SignInPage() {
             </div>
 
             <div className="space-y-2">
-              <div className="flex justify-between items-center px-1">
-                <label className="text-[13px] font-bold text-[#642ab6] uppercase tracking-wider">
-                  Password
-                </label>
-              </div>
+              <label className="text-[13px] font-bold text-[#642ab6] uppercase tracking-wider ml-1">
+                Password
+              </label>
               <div className="relative group">
                 <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#642ab6] transition-colors">
                   <FaLock size={16} />

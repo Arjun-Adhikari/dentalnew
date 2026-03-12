@@ -1,18 +1,11 @@
-// ─────────────────────────────────────────────────────────────
-//  Localization file – English & Nepali translations
-//  Add new keys here and import { t } from "@/lib/i18n" wherever needed.
-// ─────────────────────────────────────────────────────────────
-
 export type Language = "en" | "ne";
 
 const translations = {
   en: {
-    // ── Top bar ──────────────────────────────────────────────
     topBar: {
       clinicTitle: "Dental in Surkhet",
     },
 
-    // ── Navigation ───────────────────────────────────────────
     nav: {
       home: "Home",
       services: "Our Services",
@@ -20,7 +13,6 @@ const translations = {
       contact: "Contact Us",
     },
 
-    // ── Info bar (below nav) ─────────────────────────────────
     infoBar: {
       openHours: "Open Hours",
       everyday: "Everyday [7AM–7PM]",
@@ -28,7 +20,6 @@ const translations = {
       makeAppointment: "Make an Appointment",
     },
 
-    // ── Home sections ────────────────────────────────────────
     teamMembers: {
       sectionTitle: "Our Team Members",
       nmcLabel: "NMC No",
@@ -54,14 +45,14 @@ const translations = {
       sectionTitle: "Our Location",
     },
 
-    // ── Footer ───────────────────────────────────────────────
     footer: {
       brandName: "Swargadwari Dental Care Home",
-      tagline: "Providing quality dental care in Surkhet. Your healthy smile is our mission.",
+      tagline:
+        "Providing quality dental care in Surkhet. Your healthy smile is our mission.",
       quickLinksTitle: "Quick Links",
       contactTitle: "Contact & Hours",
       address: "Swargadwari Dental Care Home, Surkhet, Nepal",
-      phone: "+977-XXXXXXXXXX",
+      phone: "9843230047,9820030047",
       email: "info@swargadwaridental.com",
       hoursDetail: "Mon – Sat: 7AM – 7PM",
       emergencyHours: "Emergency: 24/7",
@@ -70,22 +61,41 @@ const translations = {
       termsPrivacy: "Terms & Privacy",
     },
 
-    // ── Services page ─────────────────────────────────────
     services: {
       pageTitle: "Our Services",
       sectionTitle: "Dental Services We Offer",
       items: [
-        { title: "Orthodontics / Braces", desc: "Straighten your teeth with modern braces and aligners for a confident smile." },
-        { title: "Crowns and Bridge", desc: "Restore damaged or missing teeth using custom-fitted crowns and bridges." },
-        { title: "Endodontics (Root Canal)", desc: "Save your natural tooth with precise root canal treatment." },
-        { title: "Oral & Maxillofacial Surgery", desc: "Expert surgical care for teeth, jaw, and facial bone conditions." },
-        { title: "Pediatric / Kids Dentistry", desc: "Gentle and friendly dental care designed especially for children." },
-        { title: "Gum Treatment", desc: "Comprehensive treatment for gum disease and periodontal conditions." },
-        { title: "Oral Appliances", desc: "Custom oral devices for sleep apnea, teeth grinding, and more." },
+        {
+          title: "Orthodontics / Braces",
+          desc: "Straighten your teeth with modern braces and aligners for a confident smile.",
+        },
+        {
+          title: "Crowns and Bridge",
+          desc: "Restore damaged or missing teeth using custom-fitted crowns and bridges.",
+        },
+        {
+          title: "Endodontics (Root Canal)",
+          desc: "Save your natural tooth with precise root canal treatment.",
+        },
+        {
+          title: "Oral & Maxillofacial Surgery",
+          desc: "Expert surgical care for teeth, jaw, and facial bone conditions.",
+        },
+        {
+          title: "Pediatric / Kids Dentistry",
+          desc: "Gentle and friendly dental care designed especially for children.",
+        },
+        {
+          title: "Gum Treatment",
+          desc: "Comprehensive treatment for gum disease and periodontal conditions.",
+        },
+        {
+          title: "Oral Appliances",
+          desc: "Custom oral devices for sleep apnea, teeth grinding, and more.",
+        },
       ],
     },
 
-    // ── Appointment page ─────────────────────────────────────
     appointment: {
       pageSubtitle: "Select your preferred date and time",
       successMsg: "Appointment requested successfully!",
@@ -103,12 +113,10 @@ const translations = {
   },
 
   ne: {
-    // ── Top bar ──────────────────────────────────────────────
     topBar: {
       clinicTitle: "सुर्खेतमा दन्त चिकित्सा",
     },
 
-    // ── Navigation ───────────────────────────────────────────
     nav: {
       home: "गृहपृष्ठ",
       services: "हाम्रा सेवाहरू",
@@ -116,7 +124,6 @@ const translations = {
       contact: "सम्पर्क गर्नुहोस्",
     },
 
-    // ── Info bar ─────────────────────────────────────────────
     infoBar: {
       openHours: "खुल्ने समय",
       everyday: "दैनिक [बिहान ७ – साँझ ७]",
@@ -124,7 +131,6 @@ const translations = {
       makeAppointment: "अपोइन्टमेन्ट लिनुहोस्",
     },
 
-    // ── Home sections ────────────────────────────────────────
     teamMembers: {
       sectionTitle: "दन्त चिकित्सकहरू",
       nmcLabel: "NMC नम्बर",
@@ -150,14 +156,13 @@ const translations = {
       sectionTitle: "हाम्रो स्थान",
     },
 
-    // ── Footer ───────────────────────────────────────────────
     footer: {
       brandName: "स्वर्गद्वारी दन्त हेरचाह घर",
       tagline: "सुर्खेतमा गुणस्तरीय दन्त सेवा। स्वस्थ मुस्कान हाम्रो लक्ष्य।",
       quickLinksTitle: "द्रुत लिंकहरू",
       contactTitle: "सम्पर्क र समय",
       address: "स्वर्गद्वारी दन्त हेरचाह घर, सुर्खेत, नेपाल",
-      phone: "+९७७-XXXXXXXXXX",
+      phone: "९८२००३००४७,९८४३२३००४७",
       email: "info@swargadwaridental.com",
       hoursDetail: "सोम – शनि: बिहान ७ – साँझ ७",
       emergencyHours: "आपतकाल: २४/७",
@@ -166,22 +171,41 @@ const translations = {
       termsPrivacy: "नियम र गोपनीयता",
     },
 
-    // ── Services page ─────────────────────────────────────
     services: {
       pageTitle: "हाम्रा सेवाहरू",
       sectionTitle: "हाम्रा दन्त सेवाहरू",
       items: [
-        { title: "अर्थोडोन्टिक्स / ब्रेसेस", desc: "आधुनिक ब्रेसेस र एलाइनरले दाँत मिलाउनुहोस् र आत्मविश्वासी मुस्कान पाउनुहोस्।" },
-        { title: "क्राउन र ब्रिज", desc: "क्षतिग्रस्त वा हराएका दाँत कस्टम क्राउन र ब्रिजले पुनर्स्थापना गर्नुहोस्।" },
-        { title: "एन्डोडोन्टिक्स (रुट क्यानाल)", desc: "सटीक रुट क्यानाल उपचारले आफ्नो प्राकृतिक दाँत बचाउनुहोस्।" },
-        { title: "ओरल र म्याक्सिलोफेसियल सर्जरी", desc: "दाँत, जबडा र अनुहारका हड्डीका अवस्थाहरूको निपुण शल्यक्रिया।" },
-        { title: "बाल दन्त चिकित्सा", desc: "बच्चाहरूका लागि विशेष रूपमा डिजाइन गरिएको कोमल र मैत्रीपूर्ण दन्त सेवा।" },
-        { title: "गिजाको उपचार", desc: "गिजाको रोग र पेरियोडोन्टल अवस्थाहरूको सम्पूर्ण उपचार।" },
-        { title: "ओरल एप्लाइयन्सेस", desc: "निद्रा एप्निया, दाँत किटकिटाउनु र अन्य समस्याका लागि कस्टम मुख उपकरणहरू।" },
+        {
+          title: "अर्थोडोन्टिक्स / ब्रेसेस",
+          desc: "आधुनिक ब्रेसेस र एलाइनरले दाँत मिलाउनुहोस् र आत्मविश्वासी मुस्कान पाउनुहोस्।",
+        },
+        {
+          title: "क्राउन र ब्रिज",
+          desc: "क्षतिग्रस्त वा हराएका दाँत कस्टम क्राउन र ब्रिजले पुनर्स्थापना गर्नुहोस्।",
+        },
+        {
+          title: "एन्डोडोन्टिक्स (रुट क्यानाल)",
+          desc: "सटीक रुट क्यानाल उपचारले आफ्नो प्राकृतिक दाँत बचाउनुहोस्।",
+        },
+        {
+          title: "ओरल र म्याक्सिलोफेसियल सर्जरी",
+          desc: "दाँत, जबडा र अनुहारका हड्डीका अवस्थाहरूको निपुण शल्यक्रिया।",
+        },
+        {
+          title: "बाल दन्त चिकित्सा",
+          desc: "बच्चाहरूका लागि विशेष रूपमा डिजाइन गरिएको कोमल र मैत्रीपूर्ण दन्त सेवा।",
+        },
+        {
+          title: "गिजाको उपचार",
+          desc: "गिजाको रोग र पेरियोडोन्टल अवस्थाहरूको सम्पूर्ण उपचार।",
+        },
+        {
+          title: "ओरल एप्लाइयन्सेस",
+          desc: "निद्रा एप्निया, दाँत किटकिटाउनु र अन्य समस्याका लागि कस्टम मुख उपकरणहरू।",
+        },
       ],
     },
 
-    // ── Appointment page ─────────────────────────────────────
     appointment: {
       pageTitle: "अपोइन्टमेन्ट बुक गर्नुहोस्",
       pageSubtitle: "आफ्नो मनपर्ने मिति र समय छान्नुहोस्",

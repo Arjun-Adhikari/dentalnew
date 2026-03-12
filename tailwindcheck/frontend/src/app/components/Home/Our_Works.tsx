@@ -8,7 +8,6 @@ const works = [
   { src: "/project1.jpg", alt: "project1" },
   { src: "/project2.jpg", alt: "project2" },
   { src: "/project3.jpg", alt: "project3" },
-  { src: "/project4.jpg", alt: "project4" },
   { src: "/project5.jpg", alt: "project5" },
 ];
 
@@ -46,7 +45,7 @@ export default function OurWorks() {
                   alt={work.alt}
                   width={900}
                   height={500}
-                  className="w-full max-h-[500px] object-contain"
+                  className="w-full max-h-125 object-contain"
                   priority={index === 0}
                   loading={index === 0 ? "eager" : "lazy"}
                 />

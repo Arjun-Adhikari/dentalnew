@@ -7,7 +7,6 @@ export default function page() {
     { id: 1, src: "/ph1.webp", alt: "First pic" },
     { id: 2, src: "/ph2.webp", alt: "Second pic" },
     { id: 3, src: "/ph3.webp", alt: "Third pic" },
-    { id: 4, src: "/ph4.webp", alt: "Fourth pic" },
     { id: 5, src: "/ph5.webp", alt: "Fifth pic" },
     { id: 6, src: "/ph6.webp", alt: "Sixth pic" },
   ]

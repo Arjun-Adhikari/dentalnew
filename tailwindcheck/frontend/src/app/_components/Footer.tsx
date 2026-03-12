@@ -27,7 +27,7 @@ export default function Footer() {
             <Link href="https://www.facebook.com/swargadwari.dental.care.home/" target="_blank" rel="noopener noreferrer" className="bg-blue-700 hover:bg-blue-600 p-2 rounded-full transition-colors" aria-label="Facebook">
               <FaFacebook size={16} />
             </Link>
-            <Link href="" target="_blank" rel="noopener noreferrer" className="bg-green-700 hover:bg-green-600 p-2 rounded-full transition-colors" aria-label="WhatsApp">
+            <Link href="https://wa.me/9779843230047" target="_blank" rel="noopener noreferrer" className="bg-green-700 hover:bg-green-600 p-2 rounded-full transition-colors" aria-label="WhatsApp">
               <FaWhatsapp size={16} />
             </Link>
           </div>

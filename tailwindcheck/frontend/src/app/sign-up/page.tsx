@@ -51,7 +51,7 @@ export default function SignUpPage() {
           type="password"
           placeholder="Password"
           required
-          minLength={8} 
+          minLength={8}
           className="w-full rounded-md bg-neutral-900 border border-neutral-700 px-3 py-2"
         />{" "}
         <button

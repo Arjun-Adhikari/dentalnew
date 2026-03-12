@@ -64,15 +64,15 @@ export default function Footer() {
           <span>
             Website made by{" "}
             <Link
-              href="https://github.com/Arjun-Adhikari"
+              href="https://codexnepal.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-300 hover:text-white underline underline-offset-2 transition-colors"
             >
-              Arjun Adhikari
+              Codexnepal
             </Link>
           </span>
-          <span>{t.footer.termsPrivacy}</span>
+          <Link className="hover:text-white" href="/terms">{t.footer.termsPrivacy}</Link>
         </div>
       </div>
     </footer>

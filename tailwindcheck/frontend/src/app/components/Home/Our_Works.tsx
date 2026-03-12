@@ -13,17 +13,14 @@ const works = [
 
 export default function OurWorks() {
   const { t } = useLanguage();
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 3000 }),
+
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [
+    Autoplay({
+      delay: 3000,
+      stopOnInteraction: true,
+      stopOnMouseEnter: true,
+    }),
   ]);
-
-  const handleMouseEnter = () => {
-    emblaApi?.plugins()?.autoplay?.stop();
-  };
-
-  const handleMouseLeave = () => {
-    emblaApi?.plugins()?.autoplay?.play();
-  };
 
   return (
     <div className="py-6">
@@ -31,12 +28,8 @@ export default function OurWorks() {
         {t.ourWorks.sectionTitle}
       </div>
       <div className="embla overflow-hidden">
-        <div
-          className="embla__viewport"
-          ref={emblaRef}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
+
+        <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
             {works.map((work, index) => (
               <div className="embla__slide flex items-center justify-center" key={index}>
@@ -45,9 +38,8 @@ export default function OurWorks() {
                   alt={work.alt}
                   width={900}
                   height={500}
-                  className="w-full max-h-125 object-contain"
+                  className="w-full max-h-115 object-contain"
                   priority={index === 0}
-                  loading={index === 0 ? "eager" : "lazy"}
                 />
               </div>
             ))}

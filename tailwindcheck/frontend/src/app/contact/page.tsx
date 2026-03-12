@@ -25,6 +25,7 @@ export default function page() {
           <div className="flex flex-col gap-1">
             <h1 className="font-bold text-[#642ab6] flex items-center gap-2"><FaPhone /> Phone</h1>
             <a href="tel:9843230047" className="text-gray-700 text-sm hover:text-[#642ab6] transition-colors">9843230047</a>
+            <a href="tel:9820030047" className="text-gray-700 text-sm hover:text-[#642ab6] transition-colors">9820030047</a>
           </div>
 
           <div className="flex flex-col gap-1">

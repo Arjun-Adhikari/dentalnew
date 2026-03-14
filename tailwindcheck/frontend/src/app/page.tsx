@@ -3,7 +3,7 @@ import Our_Location from "./components/Home/Our_Location";
 import Our_Satisfied_Customers from "./components/Home/Our_Satisfied_Customers";
 import Our_Team_Members from "./components/Home/Our_Team_Members";
 import Our_Works from "./components/Home/Our_Works";
-//this is  defalt page.tsx
+
 export default function HOME() {
   return (
     <>

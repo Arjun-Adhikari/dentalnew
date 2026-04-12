@@ -1,7 +1,7 @@
 "use client";
 import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
+import { useEffect } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 
 const works = [
@@ -14,13 +14,17 @@ const works = [
 export default function OurWorks() {
   const { t } = useLanguage();
 
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [
-    Autoplay({
-      delay: 3000,
-      stopOnInteraction: true,
-      stopOnMouseEnter: true,
-    }),
-  ]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const intervalId = setInterval(() => {
+      emblaApi.scrollNext();
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [emblaApi]);
 
   return (
     <div className="py-6">
@@ -38,8 +42,9 @@ export default function OurWorks() {
                   alt={work.alt}
                   width={900}
                   height={500}
+                  sizes="(max-width: 768px) 100vw, 900px"
+                  loading="eager"
                   className="w-full max-h-115 object-contain"
-                  priority={index === 0}
                 />
               </div>
             ))}

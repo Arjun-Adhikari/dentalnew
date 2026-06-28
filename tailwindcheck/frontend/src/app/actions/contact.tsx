@@ -31,7 +31,7 @@ export async function submitContactForm(data: {
         // 2. Send email to doctor
         await mg.messages.create(process.env.MAILGUN_DOMAIN!, {
             from: `Appointments <noreply@${process.env.MAILGUN_DOMAIN}>`,
-            to: ["basnetarun09@gmail.com"], // 👈 replace with doctor's email
+            to: [`${process.env.DoctorEmail}`],
             subject: `New Appointment Request – ${data.name}`,
             html: `
         <h2>New Appointment Booked</h2>

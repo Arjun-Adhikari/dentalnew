@@ -31,7 +31,7 @@ export default function Header() {
         <div className="sticky top-0 z-40 shadow-md">
             {/* Nav */}
             <nav className="relative bg-[#ffcf01] px-4 sm:px-10">
-                <div className="max-w-6xl mx-auto flex items-center justify-between h-[88px]">
+                <div className="max-w-6xl mx-auto flex items-center justify-between h-22">
 
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3 shrink-0">
@@ -48,7 +48,7 @@ export default function Header() {
                             <li key={link.href}>
                                 <Link
                                     href={link.href}
-                                    className={`px-5 py-[30px] text-[17px] font-bold block border-b-[3px] transition-colors ${
+                                    className={`px-5 py-7.5 text-[17px] font-bold block border-b-[3px] transition-colors ${
                                         pathname === link.href
                                             ? "border-black text-black"
                                             : "border-transparent text-gray-800 hover:text-black"

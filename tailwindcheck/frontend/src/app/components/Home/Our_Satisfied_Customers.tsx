@@ -46,17 +46,20 @@ export default function OurSatisfiedCustomers() {
   ];
 
   return (
-    <div className="py-20 px-8 bg-gradient-to-br from-[#000080]/5 to-transparent">
-      <div className="font-extrabold text-3xl flex justify-center pb-12 tracking-tight text-gray-900">
-        {t.satisfiedCustomers.sectionTitle}
+    <div className="py-20 px-8">
+      <div className="flex flex-col items-center gap-3 pb-12">
+        <div className="w-16 h-0.5 bg-terracotta rounded-full" />
+        <h2 className="font-heading text-3xl font-bold tracking-tight text-gray-900">
+          {t.satisfiedCustomers.sectionTitle}
+        </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center max-w-4xl mx-auto">
         {stats.map((stat, index) => (
-          <div key={index} className="flex flex-col items-center gap-3 bg-white rounded-2xl shadow-md py-10 px-6 border border-gray-100">
-            <span className="text-5xl font-black text-[#000080]">
+          <div key={index} className="flex flex-col items-center gap-4 bg-white rounded-2xl shadow-md py-10 px-6 border border-warm-200 hover:shadow-lg transition-shadow duration-300">
+            <span className="text-5xl font-black text-terracotta">
               <Counter target={stat.value} suffix={stat.suffix} />
             </span>
-            <span className="text-base font-semibold text-gray-600">{stat.label}</span>
+            <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">{stat.label}</span>
           </div>
         ))}
       </div>

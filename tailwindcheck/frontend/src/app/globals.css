@@ -1,7 +1,24 @@
 @import "tailwindcss";
 
+@theme {
+  --color-warm-50: #faf7f2;
+  --color-warm-100: #f5efe6;
+  --color-warm-200: #e8dccb;
+  --color-terracotta: #c97d60;
+  --color-terracotta-dark: #b0684e;
+  --font-heading: "Playfair Display", serif;
+}
+
 html {
   font-size: 17px;
+}
+
+body {
+  background-color: var(--color-warm-50);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
 }
 
 .embla__viewport {
@@ -16,4 +33,16 @@ html {
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .embla__slide {
+    flex: 0 0 25%;
+  }
 }

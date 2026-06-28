@@ -27,27 +27,31 @@ export default function OurWorks() {
   }, [emblaApi]);
 
   return (
-    <div className="py-6">
-      <div className="flex justify-center text-3xl font-extrabold pb-8 pt-10 tracking-tight text-gray-900">
-        {t.ourWorks.sectionTitle}
+    <div className="py-6 bg-white/50">
+      <div className="flex flex-col items-center gap-3 pb-8 pt-10">
+        <div className="w-16 h-0.5 bg-terracotta rounded-full" />
+        <h2 className="font-heading text-3xl font-bold tracking-tight text-gray-900">
+          {t.ourWorks.sectionTitle}
+        </h2>
       </div>
-      <div className="embla overflow-hidden">
-
-        <div className="embla__viewport" ref={emblaRef}>
-          <div className="embla__container">
-            {works.map((work, index) => (
-              <div className="embla__slide flex items-center justify-center" key={index}>
-                <Image
-                  src={work.src}
-                  alt={work.alt}
-                  width={900}
-                  height={500}
-                  sizes="(max-width: 768px) 100vw, 900px"
-                  loading="eager"
-                  className="w-full max-h-115 object-contain"
-                />
-              </div>
-            ))}
+      <div className="embla overflow-hidden px-4">
+        <div className="rounded-2xl overflow-hidden shadow-lg">
+          <div className="embla__viewport" ref={emblaRef}>
+            <div className="embla__container">
+              {works.map((work, index) => (
+                <div className="embla__slide flex items-center justify-center" key={index}>
+                  <Image
+                    src={work.src}
+                    alt={work.alt}
+                    width={900}
+                    height={500}
+                    sizes="(max-width: 768px) 100vw, 900px"
+                    loading="eager"
+                    className="w-full max-h-115 object-cover"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

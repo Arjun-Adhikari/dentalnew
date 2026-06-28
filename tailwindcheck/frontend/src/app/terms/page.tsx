@@ -17,7 +17,7 @@ export default function TermsAndPrivacyPage() {
 
         {/* ── Terms of Service ──────────────────────────────────── */}
         <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-8">
-          <h2 className="text-xl font-bold text-[#000080] mb-6 border-b pb-3">Terms of Service</h2>
+          <h2 className="font-heading text-xl font-bold text-gray-900 mb-6 border-b border-warm-200 pb-3">Terms of Service</h2>
 
           <div className="space-y-6 text-sm text-gray-700 leading-relaxed">
             <div>
@@ -59,7 +59,7 @@ export default function TermsAndPrivacyPage() {
 
         {/* ── Privacy Policy ────────────────────────────────────── */}
         <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-8">
-          <h2 className="text-xl font-bold text-[#000080] mb-6 border-b pb-3">Privacy Policy</h2>
+          <h2 className="font-heading text-xl font-bold text-gray-900 mb-6 border-b border-warm-200 pb-3">Privacy Policy</h2>
 
           <div className="space-y-6 text-sm text-gray-700 leading-relaxed">
             <div>
@@ -117,14 +117,14 @@ export default function TermsAndPrivacyPage() {
         </section>
 
         {/* Contact */}
-        <section className="bg-[#000080] text-white rounded-2xl p-8 text-center">
-          <h2 className="text-lg font-bold mb-2">Questions or Concerns?</h2>
-          <p className="text-sm text-blue-200 mb-4">If you have questions about these policies, please reach out to us.</p>
+        <section className="bg-[#2b4859] text-white rounded-2xl p-8 text-center">
+          <h2 className="font-heading text-lg font-bold mb-2">Questions or Concerns?</h2>
+          <p className="text-sm text-teal-100/80 mb-4">If you have questions about these policies, please reach out to us.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <Link href="/contact" className="bg-white text-[#000080] font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-blue-50 transition-colors">
+            <Link href="/contact" className="bg-white text-gray-800 font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-warm-50 transition-colors">
               Contact Us
             </Link>
-            <Link href="/" className="text-sm text-blue-300 hover:text-white transition-colors">
+            <Link href="/" className="text-sm text-teal-200 hover:text-white transition-colors">
               ← Back to Home
             </Link>
           </div>

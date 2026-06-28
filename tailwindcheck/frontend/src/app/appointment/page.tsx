@@ -64,7 +64,7 @@ export default function Page() {
               id="name" type="text" name="name"
               placeholder="Your full name"
               value={formData.name} onChange={handleChange} required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-terracotta focus:outline-none transition-all"
             />
           </div>
 
@@ -80,7 +80,7 @@ export default function Page() {
               minLength={10}
               maxLength={10}
               value={formData.contactno} onChange={handleChange} required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-terracotta focus:outline-none transition-all"
             />
           </div>
 
@@ -97,7 +97,7 @@ export default function Page() {
               value={formData.appointmentDate}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all cursor-pointer"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-terracotta focus:outline-none transition-all cursor-pointer"
             />
           </div>
 
@@ -108,14 +108,14 @@ export default function Page() {
               id="message" name="message" rows={3}
               placeholder="Describe your dental issue..."
               value={formData.message} onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-terracotta focus:outline-none transition-all"
             />
           </div>
 
           <button
             type="submit"
             disabled={status === "loading"}
-            className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 active:scale-95 transition-all shadow-md mt-2 disabled:opacity-60 disabled:cursor-not-allowed"
+            className="w-full bg-terracotta text-white font-semibold py-3 rounded-lg hover:bg-terracotta-dark active:scale-95 transition-all shadow-md mt-2 disabled:opacity-60 disabled:cursor-not-allowed"
           >
             {status === "loading" ? "Processing..." : "Confirm Appointment"}
           </button>

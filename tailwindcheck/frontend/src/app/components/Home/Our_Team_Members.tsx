@@ -31,9 +31,13 @@ export default function Our_Team_Members() {
 
   return (
     <div className="max-w-4xl mx-auto px-6 pt-20 pb-6">
-      <h2 className="text-3xl font-extrabold text-center mb-10 text-gray-900 tracking-tight">
-        {t.teamMembers.sectionTitle}
-      </h2>
+      <div className="flex flex-col items-center gap-3 mb-12">
+        <div className="w-16 h-0.5 bg-terracotta rounded-full" />
+        <h2 className="font-heading text-3xl font-bold text-center text-gray-900 tracking-tight">
+          {t.teamMembers.sectionTitle}
+        </h2>
+        <p className="text-gray-500 text-sm font-medium">Meet our experienced dental professionals</p>
+      </div>
       {doctors.map((doc) => (
         <DoctorCard
           key={doc.Nmc_no}

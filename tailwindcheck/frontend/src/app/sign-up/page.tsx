@@ -1,7 +1,17 @@
 "use client";
 
-import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+
+export default function SignUpPage() {
+  const router = useRouter();
+  useEffect(() => { router.replace("/sign-in"); }, [router]);
+  return null;
+}
+
+/* 
+// Original sign-up code — commented out to disable registration
+import { useState } from "react";
 import { signUp } from "@/lib/auth-client";
 import { FaUser, FaEnvelope, FaLock, FaTooth, FaCircleNotch } from "react-icons/fa";
 
@@ -65,71 +75,41 @@ export default function SignUpPage() {
 
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="space-y-2">
-              <label className="text-[13px] font-bold text-gray-700 uppercase tracking-wider ml-1">
-                Full Name
-              </label>
+              <label className="text-[13px] font-bold text-gray-700 uppercase tracking-wider ml-1">Full Name</label>
               <div className="relative group">
                 <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-terracotta transition-colors">
                   <FaUser size={16} />
                 </div>
-                <input
-                  name="name"
-                  placeholder="Dr. John Doe"
-                  required
-                  className="w-full bg-warm-50 border-2 border-warm-200 rounded-2xl pl-12 pr-4 py-4 text-gray-800 placeholder:text-gray-400 focus:border-terracotta focus:bg-white outline-none transition-all duration-200"
-                />
+                <input name="name" placeholder="Dr. John Doe" required className="w-full bg-warm-50 border-2 border-warm-200 rounded-2xl pl-12 pr-4 py-4 text-gray-800 placeholder:text-gray-400 focus:border-terracotta focus:bg-white outline-none transition-all duration-200" />
               </div>
             </div>
 
             <div className="space-y-2">
-              <label className="text-[13px] font-bold text-gray-700 uppercase tracking-wider ml-1">
-                Email
-              </label>
+              <label className="text-[13px] font-bold text-gray-700 uppercase tracking-wider ml-1">Email</label>
               <div className="relative group">
                 <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-terracotta transition-colors">
                   <FaEnvelope size={16} />
                 </div>
-                <input
-                  name="email"
-                  type="email"
-                  placeholder="doctor@clinic.com"
-                  required
-                  className="w-full bg-warm-50 border-2 border-warm-200 rounded-2xl pl-12 pr-4 py-4 text-gray-800 placeholder:text-gray-400 focus:border-terracotta focus:bg-white outline-none transition-all duration-200"
-                />
+                <input name="email" type="email" placeholder="doctor@clinic.com" required className="w-full bg-warm-50 border-2 border-warm-200 rounded-2xl pl-12 pr-4 py-4 text-gray-800 placeholder:text-gray-400 focus:border-terracotta focus:bg-white outline-none transition-all duration-200" />
               </div>
             </div>
 
             <div className="space-y-2">
-              <label className="text-[13px] font-bold text-gray-700 uppercase tracking-wider ml-1">
-                Password
-              </label>
+              <label className="text-[13px] font-bold text-gray-700 uppercase tracking-wider ml-1">Password</label>
               <div className="relative group">
                 <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-terracotta transition-colors">
                   <FaLock size={16} />
                 </div>
-                <input
-                  name="password"
-                  type="password"
-                  placeholder="••••••••••••"
-                  required
-                  minLength={8}
-                  className="w-full bg-warm-50 border-2 border-warm-200 rounded-2xl pl-12 pr-4 py-4 text-gray-800 placeholder:text-gray-400 focus:border-terracotta focus:bg-white outline-none transition-all duration-200"
-                />
+                <input name="password" type="password" placeholder="••••••••••••" required minLength={8} className="w-full bg-warm-50 border-2 border-warm-200 rounded-2xl pl-12 pr-4 py-4 text-gray-800 placeholder:text-gray-400 focus:border-terracotta focus:bg-white outline-none transition-all duration-200" />
               </div>
             </div>
 
-            <button
-              type="submit"
-              disabled={isLoading}
-              className="group relative w-full bg-terracotta text-white font-bold rounded-2xl px-4 py-4 hover:bg-terracotta-dark active:scale-[0.98] transition-all disabled:opacity-70 disabled:cursor-not-allowed shadow-xl shadow-terracotta/20"
-            >
+            <button type="submit" disabled={isLoading} className="group relative w-full bg-terracotta text-white font-bold rounded-2xl px-4 py-4 hover:bg-terracotta-dark active:scale-[0.98] transition-all disabled:opacity-70 disabled:cursor-not-allowed shadow-xl shadow-terracotta/20">
               <div className="flex items-center justify-center gap-3">
                 {isLoading ? (
                   <FaCircleNotch className="animate-spin text-xl text-white" />
                 ) : (
-                  <span className="flex items-center gap-2">
-                    Create Account <span className="text-white">→</span>
-                  </span>
+                  <span className="flex items-center gap-2">Create Account <span className="text-white">→</span></span>
                 )}
               </div>
             </button>
@@ -139,3 +119,4 @@ export default function SignUpPage() {
     </main>
   );
 }
+*/

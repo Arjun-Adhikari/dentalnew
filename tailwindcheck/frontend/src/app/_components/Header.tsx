@@ -39,9 +39,9 @@ export default function Header() {
                             <div className="relative">
                                 <Image src="/dentallogo.jpg" alt="Swargadwari Dental" className="rounded-2xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105" width={58} height={58} />
                             </div>
-                            <div className="hidden sm:flex flex-col leading-snug">
-                                <span className="font-heading font-bold text-2xl tracking-tight text-gray-900">Swargadwari</span>
-                                <span className="text-sm text-gray-500 font-medium tracking-wide">Dental Care Home</span>
+                            <div className="flex flex-col leading-tight sm:leading-snug">
+                                <span className="font-heading font-bold text-lg sm:text-2xl tracking-tight text-gray-900">Swargadwari</span>
+                                <span className="text-[11px] sm:text-sm text-gray-500 font-medium tracking-wide">Dental Care Home</span>
                             </div>
                         </Link>
 

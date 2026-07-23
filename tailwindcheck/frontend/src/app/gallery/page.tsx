@@ -1,23 +1,24 @@
 "use client"
 import Image from "next/image";
 import { useState } from "react";
+import FadeInView from "@/app/_components/FadeInView";
 export default function page() {
   const [selected, setSelected] = useState<{ id: number; src: string; alt: string } | null>(null);
   const imageData = [
     { id: 1, src: "/ph1.webp", alt: "First pic" },
     { id: 2, src: "/ph2.webp", alt: "Second pic" },
     { id: 3, src: "/ph3.webp", alt: "Third pic" },
-    { id: 5, src: "/ph5.webp", alt: "Fifth pic" },
-    { id: 6, src: "/ph6.webp", alt: "Sixth pic" },
+    { id: 5, src: "/pic1.webp", alt: "pic1" },
+    { id: 6, src: "/pic2.webp", alt: "pic2" },
+    { id: 7, src: "/ph5.webp", alt: "Fifth pic" },
+    { id: 8, src: "/ph6.webp", alt: "Sixth pic" },
   ]
 
   return (
 
-    <div>
-      <div>
-        <div className="bg-[#2b4859] text-white flex justify-center pt-10 pb-8 mb-6 text-2xl md:text-3xl">
-          <h1>Our Gallery</h1>
-        </div>
+    <FadeInView>
+      <div className="bg-[#2b4859] text-white flex flex-col items-center justify-center py-12 px-4 gap-2 mb-6">
+        <h1 className="font-heading text-2xl md:text-4xl font-bold tracking-tight">Our Gallery</h1>
       </div>
 
 
@@ -69,6 +70,6 @@ export default function page() {
         </div>
       )}
 
-    </div>
+    </FadeInView>
   );
 }

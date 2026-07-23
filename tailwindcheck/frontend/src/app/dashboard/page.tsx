@@ -57,7 +57,7 @@ export default function DashboardPage() {
     if (isPending || !session?.user) return <p className="text-center mt-8 text-white">Loading...</p>;
 
     return (
-        <main className="max-w-3xl mx-auto p-6 space-y-6 text-black relative">
+        <main className="max-w-3xl mx-auto p-6 pb-12 space-y-6 text-black relative">
 
             {/* --- CUSTOM MODAL (Replaces the "localhost says" popup) --- */}
             {isModalOpen && (

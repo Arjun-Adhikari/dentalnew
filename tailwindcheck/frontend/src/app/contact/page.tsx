@@ -1,12 +1,13 @@
 "use client";
 import Link from "next/link";
 import { FaFacebook, FaWhatsapp, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import FadeInView from "@/app/_components/FadeInView";
 
 export default function page() {
   return (
-    <div>
-      <div className="bg-[#2b4859] text-white flex justify-center pt-10 pb-8 mb-6 text-2xl md:text-3xl font-bold">
-        Contact Us
+    <FadeInView>
+      <div className="bg-[#2b4859] text-white flex flex-col items-center justify-center py-12 px-4 gap-2 mb-6">
+        <h1 className="font-heading text-2xl md:text-4xl font-bold tracking-tight">Contact Us</h1>
       </div>
       <div className="flex justify-center flex-col lg:flex-row items-start gap-8 px-6 pb-12">
         {/* Info card */}
@@ -19,7 +20,7 @@ export default function page() {
 
           <div className="flex flex-col gap-1">
             <h1 className="font-heading font-bold text-terracotta flex items-center gap-2"><FaEnvelope /> Email</h1>
-            <a href="mailto:Swargadwari@gmail.com" className="text-gray-700 text-sm hover:text-terracotta transition-colors">Swargadwari@gmail.com</a>
+            <a href="mailto:swargadwaridentalcarehome@gmail.com" className="text-gray-700 text-sm hover:text-terracotta transition-colors">swargadwaridentalcarehome@gmail.com</a>
           </div>
 
           <div className="flex flex-col gap-1">
@@ -70,6 +71,6 @@ export default function page() {
           />
         </div>
       </div>
-    </div>
+    </FadeInView>
   );
 }

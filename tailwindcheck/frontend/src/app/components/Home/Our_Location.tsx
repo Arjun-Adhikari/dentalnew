@@ -1,12 +1,13 @@
 "use client";
 import { useLanguage } from "@/lib/LanguageContext";
+import FadeInView from "@/app/_components/FadeInView";
 
 export default function Our_Location() {
   const { t } = useLanguage();
   return (
-    <div className="flex justify-center p-2 pb-10">
+    <FadeInView className="flex justify-center p-2 pb-10">
       <div className="flex flex-col gap-10">
-        <h1 className="font-bold text-2xl  flex justify-center">
+        <h1 className="font-heading text-xl md:text-3xl font-bold tracking-tight flex justify-center">
           {t.ourLocation.sectionTitle}
         </h1>
         <iframe
@@ -18,6 +19,6 @@ export default function Our_Location() {
           referrerPolicy="no-referrer-when-downgrade"
         />
       </div>
-    </div>
+    </FadeInView>
   );
 }

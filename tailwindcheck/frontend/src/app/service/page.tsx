@@ -2,16 +2,16 @@
 import { useLanguage } from "@/lib/LanguageContext";
 import Link from "next/link";
 import { FaTeeth, FaGem, FaTooth, FaSyringe, FaSmile, FaTeethOpen, FaShieldAlt } from "react-icons/fa";
+import FadeInView from "@/app/_components/FadeInView";
 
 export default function page() {
   const { t } = useLanguage();
 
   return (
-    <div>
+    <FadeInView>
       {/* Page header */}
-      <div className="bg-[#2b4859] text-white flex flex-col items-center justify-center py-12 px-4 gap-2">
-        <h1 className="text-2xl md:text-4xl font-bold tracking-tight">{t.services.pageTitle}</h1>
-        <p className="text-teal-100/80 text-sm md:text-base">{t.infoBar.everyday} &nbsp;|&nbsp; {t.infoBar.emergency}</p>
+      <div className="bg-[#2b4859] text-white flex flex-col items-center justify-center py-12 px-4 gap-2 mb-6">
+        <h1 className="font-heading text-2xl md:text-4xl font-bold tracking-tight">{t.services.pageTitle}</h1>
       </div>
 
       {/* Services grid */}
@@ -49,6 +49,6 @@ export default function page() {
           </Link>
         </div>
       </div>
-    </div>
+    </FadeInView>
   );
 }

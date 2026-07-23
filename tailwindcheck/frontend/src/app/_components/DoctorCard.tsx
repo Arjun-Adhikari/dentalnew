@@ -16,31 +16,31 @@ export default function DoctorCard({
   nmcLabel?: string;
 }) {
   return (
-    <div className="bg-white border border-warm-200 shadow-lg rounded-3xl p-8 mb-8 flex flex-col sm:flex-row items-center gap-8 hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-white border border-warm-200 shadow-lg rounded-2xl p-5 md:p-6 flex flex-col items-center gap-4 hover:shadow-xl transition-shadow duration-300 h-full">
       {/* Photo */}
       <div className="shrink-0">
         <Image
           src={`/${DoctorImg}`}
           alt={Dr_Name}
-          width={180}
-          height={180}
-          className="rounded-2xl object-cover w-[180px] h-[180px] shadow-md"
+          width={140}
+          height={140}
+          className="rounded-2xl object-cover w-[120px] h-[120px] md:w-[140px] md:h-[140px] shadow-md"
         />
       </div>
 
       {/* Info */}
-      <div className="flex flex-col gap-3 text-center sm:text-left">
-        <span className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+      <div className="flex flex-col gap-1.5 md:gap-2 text-center">
+        <span className="text-[11px] md:text-xs font-semibold text-gray-500 uppercase tracking-wider">
           {Designation}
         </span>
         {/* Name */}
-        <h2 className="font-heading text-3xl font-bold text-gray-900 leading-tight tracking-tight">
+        <h2 className="font-heading text-lg md:text-xl font-bold text-gray-900 leading-tight tracking-tight">
           Dr. {Dr_Name}
         </h2>
         {/* Degree */}
-        <span className="text-base font-medium text-gray-500">{Degree}</span>
+        <span className="text-sm md:text-base font-medium text-gray-500">{Degree}</span>
         {/* NMC */}
-        <span className="text-sm font-semibold text-gray-400 mt-1">
+        <span className="text-xs md:text-sm font-semibold text-gray-400">
           {nmcLabel}: <span className="text-gray-600 font-bold">{Nmc_no}</span>
         </span>
       </div>

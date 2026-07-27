@@ -35,7 +35,7 @@ export default function SignInPage() {
   }
 
   return (
-    <main className="min-h-screen w-full flex items-center justify-center bg-warm-50 p-4 sm:p-8">
+    <main className="min-h-screen w-full flex items-center justify-center bg-warm-50 p-4 sm:p-8" aria-label="Sign in to appointment dashboard">
       <div className="fixed inset-0 overflow-hidden -z-10 opacity-20">
         <div className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] rounded-full bg-terracotta blur-[120px]" />
         <div className="absolute -bottom-[10%] -right-[10%] w-[50%] h-[50%] rounded-full bg-[#2b4859] blur-[120px]" />

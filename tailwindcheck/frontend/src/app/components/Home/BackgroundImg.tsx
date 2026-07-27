@@ -1,14 +1,17 @@
 export default function BackgroundImg() {
   return (
-    <section className="relative">
+    <section className="relative" aria-label="Swargadwari Dental Care Home video showcase">
       <video
         src="/second.mp4"
         autoPlay
         muted
         loop
         playsInline
+        poster="/dentallogo.jpg"
         className="w-full h-[40vh] md:h-[55vh] object-cover"
-      />
+      >
+        Your browser does not support the video tag. Visit Swargadwari Dental Care Home in Birendranagar, Surkhet for expert dental care.
+      </video>
       <div className="absolute inset-0 pointer-events-none"
         style={{
           background:

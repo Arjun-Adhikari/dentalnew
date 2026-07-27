@@ -8,6 +8,7 @@ const translations = {
 
     nav: {
       home: "Home",
+      about: "About Us",
       services: "Our Services",
       gallery: "Our Gallery",
       contact: "Contact Us",
@@ -119,6 +120,7 @@ const translations = {
 
     nav: {
       home: "गृहपृष्ठ",
+      about: "हाम्रो बारेमा",
       services: "हाम्रा सेवाहरू",
       gallery: "ग्यालेरी",
       contact: "सम्पर्क गर्नुहोस्",

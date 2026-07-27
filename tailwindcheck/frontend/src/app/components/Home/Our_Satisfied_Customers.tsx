@@ -50,7 +50,7 @@ export default function OurSatisfiedCustomers() {
     <FadeInView className="py-20 px-8">
       <div className="flex flex-col items-center gap-3 pb-12">
         <div className="w-16 h-0.5 bg-terracotta rounded-full" />
-        <h2 className="font-heading text-xl md:text-3xl font-bold tracking-tight text-gray-900">
+        <h2 id="stats-heading" className="font-heading text-xl md:text-3xl font-bold tracking-tight text-gray-900">
           {t.satisfiedCustomers.sectionTitle}
         </h2>
       </div>

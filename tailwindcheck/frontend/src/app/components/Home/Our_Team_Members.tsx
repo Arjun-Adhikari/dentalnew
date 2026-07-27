@@ -24,20 +24,20 @@ export default function Our_Team_Members() {
       Nmc_no: 27555,
       DoctorImg: "drarun.webp",
     },
-    {
-      Designation: t.doctorDesignations.seniorDentalSurgeon,
-      Dr_Name: "Suraj Rawat",
-      Degree: "BDS(KU)",
-      Nmc_no: 28797,
-      DoctorImg: "backgroundimg.jpg",
-    },
-    {
-      Designation: t.doctorDesignations.consultantProsthodontist,
-      Dr_Name: "Sudip Subedi",
-      Degree: "BDS(KU),MDS(T.U)",
-      Nmc_no: 17413,
-      DoctorImg: "backgroundimg.jpg",
-    },
+    // {
+    //   Designation: t.doctorDesignations.seniorDentalSurgeon,
+    //   Dr_Name: "Suraj Rawat",
+    //   Degree: "BDS(KU)",
+    //   Nmc_no: 28797,
+    //   DoctorImg: "backgroundimg.jpg",
+    // },
+    // {
+    //   Designation: t.doctorDesignations.consultantProsthodontist,
+    //   Dr_Name: "Sudip Subedi",
+    //   Degree: "BDS(KU),MDS(T.U)",
+    //   Nmc_no: 17413,
+    //   DoctorImg: "backgroundimg.jpg",
+    // },
   ];
 
   const cardVariants = {
@@ -60,7 +60,7 @@ export default function Our_Team_Members() {
     <div className="max-w-4xl mx-auto px-6 pt-10 pb-6">
       <div className="flex flex-col items-center gap-3 mb-12">
         <div className="w-16 h-0.5 bg-terracotta rounded-full" />
-        <h2 className="font-heading text-xl md:text-3xl font-bold text-center text-gray-900 tracking-tight">
+        <h2 id="team-heading" className="font-heading text-xl md:text-3xl font-bold text-center text-gray-900 tracking-tight">
           {t.teamMembers.sectionTitle}
         </h2>
         <p className="text-gray-500 text-sm font-medium">Meet our experienced dental professionals</p>

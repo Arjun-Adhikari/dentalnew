@@ -6,10 +6,12 @@ import { useLanguage } from "@/lib/LanguageContext";
 import FadeInView from "@/app/_components/FadeInView";
 
 const works = [
-  { src: "/project1.jpg", alt: "project1" },
-  { src: "/project2.jpg", alt: "project2" },
-  { src: "/project3.jpg", alt: "project3" },
-  { src: "/project5.jpg", alt: "project5" },
+  { src: "/w1.webp", alt: "Dental clinic work showcase at Swargadwari Dental Care Home Surkhet" },
+  { src: "/w2.webp", alt: "Dental treatment showcase at Swargadwari Dental Care Home Birendranagar" },
+  { src: "/w3.webp", alt: "Dental procedure showcase at Swargadwari Dental Care Home Nepal" },
+  { src: "/w4.webp", alt: "Dental care showcase at Swargadwari Dental Care Home Surkhet" },
+  { src: "/w5.webp", alt: "Dental service showcase at Swargadwari Dental Care Home Birendranagar" },
+  { src: "/w6.webp", alt: "Dental clinic results showcase at Swargadwari Dental Care Home Surkhet" },
 ];
 
 export default function OurWorks() {
@@ -37,7 +39,7 @@ export default function OurWorks() {
     <FadeInView className="py-6 bg-white/50 overflow-hidden">
       <div className="flex flex-col items-center gap-3 pb-8 pt-10">
         <div className="w-16 h-0.5 bg-terracotta rounded-full" />
-        <h2 className="font-heading text-xl md:text-3xl font-bold tracking-tight text-gray-900">
+        <h2 id="works-heading" className="font-heading text-xl md:text-3xl font-bold tracking-tight text-gray-900">
           {t.ourWorks.sectionTitle}
         </h2>
       </div>
@@ -57,15 +59,15 @@ export default function OurWorks() {
       >
         <motion.div ref={ref} style={{ x }} className="flex">
           {[...works, ...works].map((work, i) => (
-            <div key={i} className="shrink-0 w-[85vw] sm:w-[70vw] md:w-[45vw] lg:w-[30vw] px-2">
+            <div key={i} className="shrink-0 w-[90vw] sm:w-[75vw] md:w-[55vw] lg:w-[40vw] px-3">
               <Image
                 src={work.src}
                 alt={work.alt}
-                width={900}
-                height={500}
-                sizes="(max-width: 768px) 100vw, 900px"
-                loading="eager"
-                className="w-full h-50 md:h-72 object-cover rounded-xl"
+                width={1100}
+                height={650}
+                sizes="(max-width: 768px) 100vw, 1100px"
+                loading="lazy"
+                className="w-full h-64 md:h-96 object-cover rounded-xl"
               />
             </div>
           ))}

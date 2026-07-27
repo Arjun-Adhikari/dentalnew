@@ -18,7 +18,7 @@ export default function page() {
 
     <FadeInView>
       <main>
-      <div className="bg-[#2b4859] text-white flex flex-col items-center justify-center py-12 px-4 gap-2 mb-6">
+      <div className="bg-[#2b4859] text-white flex flex-col items-center justify-center py-4 md:py-6 px-4 gap-2 mb-3 md:mb-4">
         <h1 className="font-heading text-2xl md:text-4xl font-bold tracking-tight">Our Gallery</h1>
       </div>
 

@@ -7,7 +7,6 @@ export default function BackgroundImg() {
         muted
         loop
         playsInline
-        poster="/dentallogo.jpg"
         className="w-full h-[40vh] md:h-[55vh] object-cover"
       >
         Your browser does not support the video tag. Visit Swargadwari Dental Care Home in Birendranagar, Surkhet for expert dental care.
